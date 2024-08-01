@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { baseUrl } from "../utils/constants";
 import { setPosts } from "../state";
+import { baseUrl } from "../utils/constants";
 import PostWidget from "./PostWidget";
 
 interface Props {

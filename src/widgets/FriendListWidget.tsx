@@ -1,11 +1,10 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { baseUrl, IUser } from "../utils/constants";
-import { setFriends } from "../state";
-import WidgetWrapper from "../components/WidgetWrapper";
 import Friend from "../components/Friend";
+import WidgetWrapper from "../components/WidgetWrapper";
+import { setFriends } from "../state";
+import { baseUrl, IUser } from "../utils/constants";
 
 interface Props {
   userId: string;

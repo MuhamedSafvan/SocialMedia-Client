@@ -1,7 +1,6 @@
 import { Typography, useTheme } from "@mui/material";
-import React from "react";
-import WidgetWrapper from "../components/WidgetWrapper";
 import FlexBetween from "../components/FlexBetween";
+import WidgetWrapper from "../components/WidgetWrapper";
 import { assetBaseUrl } from "../utils/constants";
 
 const AdvertWidget = () => {

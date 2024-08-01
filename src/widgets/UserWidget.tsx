@@ -1,17 +1,17 @@
 import {
-  ManageAccountsOutlined,
   EditOutlined,
   LocationOnOutlined,
+  ManageAccountsOutlined,
   WorkOutlineOutlined,
 } from "@mui/icons-material";
-import { Box, Typography, Divider, useTheme } from "@mui/material";
+import { Box, Divider, Typography, useTheme } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { baseUrl } from "../utils/constants";
-import WidgetWrapper from "../components/WidgetWrapper";
 import FlexBetween from "../components/FlexBetween";
 import UserImage from "../components/UserImage";
+import WidgetWrapper from "../components/WidgetWrapper";
+import { baseUrl } from "../utils/constants";
 
 interface Props {
   userId: string;
@@ -62,7 +62,6 @@ const UserWidget = ({ userId, profilePic }: Props) => {
   const {
     firstName,
     lastName,
-    email,
     location,
     occupation,
     viewedProfile,

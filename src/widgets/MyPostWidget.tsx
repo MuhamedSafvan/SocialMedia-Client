@@ -1,30 +1,25 @@
-import React, { useState } from "react";
 import {
-  EditOutlined,
   DeleteOutlined,
-  AttachFileOutlined,
-  GifBoxOutlined,
-  ImageOutlined,
-  MicOutlined,
-  MoreHorizOutlined,
+  EditOutlined,
+  ImageOutlined
 } from "@mui/icons-material";
+import { useState } from "react";
 
 import {
   Box,
-  Divider,
-  Typography,
-  InputBase,
-  useTheme,
   Button,
+  Divider,
   IconButton,
-  useMediaQuery,
+  InputBase,
+  Typography,
+  useTheme,
 } from "@mui/material";
 
-import FlexBetween from "../components/FlexBetween";
 import Dropzone from "react-dropzone";
+import { useDispatch, useSelector } from "react-redux";
+import FlexBetween from "../components/FlexBetween";
 import UserImage from "../components/UserImage";
 import WidgetWrapper from "../components/WidgetWrapper";
-import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "../state";
 import { baseUrl } from "../utils/constants";
 
@@ -39,7 +34,6 @@ const MyPostWidget = ({ profilePic }: Props) => {
   const { palette } = useTheme();
   const { _id } = useSelector((state: any) => state.user);
   const token = useSelector((state: any) => state.token);
-  const isNonMobileScreen = useMediaQuery("(min-width:1000px)");
   const mediumMain = (palette as any).neutral.mediumMain;
   const medium = (palette as any).neutral.medium;
 

@@ -1,19 +1,18 @@
-import React, { useState } from "react";
 import {
   ChatBubbleOutlineOutlined,
   FavoriteBorderOutlined,
   FavoriteOutlined,
   ShareOutlined,
 } from "@mui/icons-material";
+import { useState } from "react";
 
 import { Box, Divider, IconButton, Typography, useTheme } from "@mui/material";
-import FlexBetween from "../components/FlexBetween";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { assetBaseUrl, baseUrl, IUser } from "../utils/constants";
-import { setPost } from "../state";
-import WidgetWrapper from "../components/WidgetWrapper";
+import FlexBetween from "../components/FlexBetween";
 import Friend from "../components/Friend";
+import WidgetWrapper from "../components/WidgetWrapper";
+import { setPost } from "../state";
+import { assetBaseUrl, baseUrl, IUser } from "../utils/constants";
 
 
 

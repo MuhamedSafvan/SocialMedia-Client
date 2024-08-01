@@ -1,3 +1,4 @@
+import { DarkMode, LightMode } from "@mui/icons-material";
 import {
   Box,
   IconButton,
@@ -5,13 +6,11 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import Form from "./Form";
 import Lottie from "react-lottie";
-import animationData from "../../utils/animations/landing.json";
-import NavBar from "../../components/NavBar";
-import { DarkMode, LightMode } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
 import { setMode } from "../../state";
+import animationData from "../../utils/animations/landing.json";
+import Form from "./Form";
 
 const LoginPage = () => {
   const theme = useTheme();
